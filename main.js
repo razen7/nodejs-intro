@@ -38,7 +38,7 @@ server.on('close', () => {
     console.log('SERVER shutting down');
 })
 
-const PORT = 8000;
+const PORT = (process.env.PORT || 8000);
 server.listen(PORT, () => {
     console.log('Server is running at http://localhost:' + PORT);
 })
